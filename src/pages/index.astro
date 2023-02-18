@@ -25,6 +25,8 @@ const projects = (await getCollection('lulusan'))
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 ---
+inject();
+
 
 <BaseLayout>
 	<div class="stack gap-20 lg:gap-48">
@@ -105,7 +107,6 @@ const projects = (await getCollection('lulusan'))
 		<ContactCTA />
 	</div>
 </BaseLayout>
-inject();
 
 <style>
 	.hero {
