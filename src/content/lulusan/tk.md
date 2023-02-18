@@ -1,5 +1,5 @@
 ---
-title: TAMAN KANAKKANAK
+title: TAMAN KANAK-KANAK
 publishDate: 2023-02-017 00:00:00
 img: /assets/stock-3.jpg
 img_alt: TAMAN KANAK-KANAK
