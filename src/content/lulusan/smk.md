@@ -1,14 +1,14 @@
 ---
-title: Markdown Mystery Tour
+title: SMK NEGERI TUGUMULYO
 publishDate: 2020-03-02 00:00:00
 img: /assets/stock-1.jpg
-img_alt: Iridescent ripples of a bright blue and pink liquid
+img_alt: SEBUAH SMK TERBAIK DI MUSI RAWAD
 description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+  SMK N TGM MERUPAKAN SALAH SATU SMK TERBIAK DI MUSI RAWAS
 tags:
-  - Design
-  - Dev
-  - User Testing
+  - SMK
+  - SCHOOL
+  - SMKNTGM
 ---
 
 ## Level-two heading
