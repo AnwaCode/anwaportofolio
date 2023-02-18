@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { inject } from '@vercel/analytics';
 
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -104,6 +105,7 @@ const projects = (await getCollection('lulusan'))
 		<ContactCTA />
 	</div>
 </BaseLayout>
+inject();
 
 <style>
 	.hero {
