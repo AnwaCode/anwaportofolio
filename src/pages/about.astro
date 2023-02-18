@@ -1,0 +1,116 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
+---
+
+<BaseLayout title="About | Anwa Code" description="About Anwa Code">
+  <div class="stack gap-20">
+    <main class="wrapper about">
+      <Hero
+        title="About"
+        tagline="Terima kasih sudah mampir. Baca di bawah untuk mempelajari lebih lanjut tentang diri saya dan latar belakang saya."
+      >
+        <img
+          width="1553"
+          height="873"
+          src="/assets/at-work.jpg"
+          alt="Anwa Code at work with a colleague"
+        />
+      </Hero>
+
+      <section>
+        <h2 class="section-title">Latar Belakang</h2>
+        <div class="content">
+          <p>
+            Seorang individu yang lahir pada 27 Juni 2004 dan tinggal di Desa S
+            Kertosari, Kecamatan Purwodadi, Kabupaten Musi Rawas, Sumatra
+            Selatan.
+          </p>
+          <p>
+            Saya memiliki hobi yang kuat dalam bidang coding dan memiliki
+            cita-cita untuk menjadi seorang fullstack developer. Hobi Saya
+            tersebut menunjukkan bahwa Saya memiliki minat dan passion yang kuat
+            dalam bidang teknologi informasi, dan dengan memiliki cita-cita
+            sebagai fullstack developer, Saya memiliki visi dan tujuan jangka
+            panjang untuk mengembangkan kemampuan dan karir Saya dalam bidang
+            tersebut.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Pendidikan</h2>
+        <div class="content">
+          <p>Saya Saat Ini Masih Menjadi Siswa AKtif Di <a href="https://smkn-tgm.sch.id">SMK Negeri Tugumulyo</a>.</p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Skill</h2>
+        <div class="content">
+          <p>Sekedar Skill Copas</p>
+        </div>
+      </section>
+    </main>
+
+    <ContactCTA />
+  </div>
+</BaseLayout>
+
+<style>
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+  }
+
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+  }
+
+  .content {
+    grid-column: 2 / 4;
+  }
+
+  .content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
+
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
+
+  @media (min-width: 50em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+    }
+
+    .about > :global(:first-child) {
+      grid-column-start: 2;
+    }
+
+    section {
+      display: contents;
+      font-size: var(--text-lg);
+    }
+  }
+</style>
