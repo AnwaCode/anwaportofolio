@@ -1,41 +1,265 @@
-<!-- git add. -->
-<!-- git commit -m "" -->
-<!-- git push -->
-<h3 align="center">A passionate frontend & backend developer from Musi Rawas, Sumatra Selatan, INDONESIA</h3>
+---
+title: Jalan Ukk
+publishDate: 2023-02-18 21:00:00
+img: /assets/stock-2.jpg
+img_alt: UKK
+description: |
+  Jalan UKK
+tags:
+-- avahvav
+---
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=anwacode&label=Profile%20views&color=0e75b6&style=flat" alt="anwacode" /> </p>
+Untuk membuat sebuah CRUD sederhana menggunakan Laravel, Anda dapat mengikuti langkah-langkah berikut:
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=anwacode" alt="anwacode" /></a> </p>
+1. Persiapkan database Anda dan buat tabel kelas dengan kolom id_kelas (sebagai primary key), nama_kelas, kompetensi_keahlian.
+2. Buat model Kelas dengan menggunakan perintah artisan php artisan make:model Kelas. Model ini akan merepresentasikan tabel kelas pada database.
+3. Buat migration untuk tabel kelas dengan menggunakan perintah artisan php artisan make:migration create_kelas_table --create=kelas. Kemudian, buka file migration dan atur struktur tabel sesuai dengan kebutuhan Anda:
 
-<p align="left"> <a href="https://twitter.com/developeranwa" target="blank"><img src="https://img.shields.io/twitter/follow/developeranwa?logo=twitter&style=for-the-badge" alt="developeranwa" /></a> </p>
 
-- 🔭 I’m currently working on [Kelazzz Panel](https://kelazzz.com)
 
-- 🌱 I’m currently learning **Framework**
+Schema::create('kelas', function (Blueprint $table) {
+    $table->increments('id_kelas');
+    $table->string('nama_kelas');
+    $table->string('kompetensi_keahlian');
+    $table->timestamps();
+});
 
-- 👯 I’m looking to collaborate on **Anwa Group**
 
-- 🤝 I’m looking for help with [Whatsapp](https://wa.me/6285162822778)
 
-- 👨‍💻 All of my projects are available at [https://anwadev.my.id](https://anwadev.my.id)
 
-- 💬 Ask me about **Laravel**
+4. Jalankan migration dengan perintah php artisan migrate. 
+5. Buat controller KelasController dengan menggunakan perintah php artisan make:controller KelasController --resource. Controller ini akan berisi fungsi-fungsi untuk melakukan operasi CRUD pada tabel kelas.
 
-- 📫 How to reach me **anwacode@gmail.com**
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://codepen.io/anwacode" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="anwacode" height="30" width="40" /></a>
-<a href="https://dev.to/anwacode" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" alt="anwacode" height="30" width="40" /></a>
-<a href="https://twitter.com/developeranwa" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="developeranwa" height="30" width="40" /></a>
-<a href="https://www.youtube.com/c/anwacode" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="anwacode" height="30" width="40" /></a>
-</p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.chartjs.org" target="_blank" rel="noreferrer"> <img src="https://www.chartjs.org/media/logo-title.svg" alt="chartjs" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://flutter.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="40" height="40"/> </a> <a href="https://cloud.google.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://heroku.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://laravel.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain-wordmark.svg" alt="laravel" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a> <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> <a href="https://vuejs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40"/> </a> </p>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=anwacode&show_icons=true&locale=en&layout=compact" alt="anwacode" /></p>
+class KelasController extends Controller
+{
+    public function index()
+    {
+        // tampilkan semua data kelas
+        $kelas = Kelas::all();
+        return view('kelas.index', compact('kelas'));
+    }
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=anwacode&show_icons=true&locale=en" alt="anwacode" /></p>
+    public function create()
+    {
+        // tampilkan halaman form untuk menambahkan data kelas
+        return view('kelas.create');
+    }
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=anwacode&" alt="anwacode" /></p>
+    public function store(Request $request)
+    {
+        // validasi data yang diinputkan oleh user
+        $validatedData = $request->validate([
+            'nama_kelas' => 'required',
+            'kompetensi_keahlian' => 'required',
+        ]);
+
+        // simpan data kelas ke database
+        Kelas::create($validatedData);
+
+        // redirect ke halaman index kelas dengan pesan sukses
+        return redirect('/kelas')->with('success', 'Kelas berhasil ditambahkan');
+    }
+
+    public function show($id)
+    {
+        // tampilkan detail data kelas dengan id tertentu
+        $kelas = Kelas::findOrFail($id);
+        return view('kelas.show', compact('kelas'));
+    }
+
+    public function edit($id)
+    {
+        // tampilkan halaman form untuk mengedit data kelas dengan id tertentu
+        $kelas = Kelas::findOrFail($id);
+        return view('kelas.edit', compact('kelas'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        // validasi data yang diinputkan oleh user
+        $validatedData = $request->validate([
+            'nama_kelas' => 'required',
+            'kompetensi_keahlian' => 'required',
+        ]);
+
+        // update data kelas dengan id tertentu
+        Kelas::findOrFail($id)->update($validatedData);
+
+        // redirect ke halaman index kelas dengan pesan sukses
+        return redirect('/kelas')->with('success', 'Kelas berhasil diupdate');
+    }
+
+    public function destroy($id)
+    {
+        // hapus data kelas dengan id tertentu
+        Kelas::findOrFail($id)->delete();
+
+        // redirect ke halaman index kelas dengan pesan sukses
+        return redirect('/kelas')->with('success', 'Kelas berhasil dihapus');
+    }
+}
+
+
+
+
+
+6. Buat route untuk KelasController pada file routes/web.php. Contoh:
+
+
+
+Route::resource('kelas', 'KelasController');
+
+Dengan menambahkan kode di atas, Laravel akan membuatkan secara otomatis semua route yang dibutuhkan untuk melakukan operasi CRUD pada tabel kelas.
+
+
+7. Buat tampilan menggunakan view blade. Anda dapat membuat view untuk menampilkan daftar kelas (index.blade.php), form tambah kelas (create.blade.php), form edit kelas (edit.blade.php), dan detail kelas (show.blade.php). Contoh:
+
+
+
+'index.blade.php'
+
+
+
+@extends('layouts.app')
+
+@section('content')
+    <h1>Daftar Kelas</h1>
+
+    @if(session('success'))
+        <div class="alert alert-success">{{ session('success') }}</div>
+    @endif
+
+    <a href="{{ route('kelas.create') }}" class="btn btn-primary mb-3">Tambah Kelas</a>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ID Kelas</th>
+                <th>Nama Kelas</th>
+                <th>Kompetensi Keahlian</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach($kelas as $kls)
+                <tr>
+                    <td>{{ $kls->id_kelas }}</td>
+                    <td>{{ $kls->nama_kelas }}</td>
+                    <td>{{ $kls->kompetensi_keahlian }}</td>
+                    <td>
+                        <a href="{{ route('kelas.show', $kls->id_kelas) }}" class="btn btn-info btn-sm">Detail</a>
+                        <a href="{{ route('kelas.edit', $kls->id_kelas) }}" class="btn btn-warning btn-sm">Edit</a>
+                        <form action="{{ route('kelas.destroy', $kls->id_kelas) }}" method="post" class="d-inline">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus kelas ini?')">Hapus</button>
+                        </form>
+                    </td>
+                </tr>
+            @endforeach
+        </tbody>
+    </table>
+@endsection
+
+
+
+create.blade.php
+
+
+@extends('layouts.app')
+
+@section('content')
+    <h1>Tambah Kelas</h1>
+
+    <form action="{{ route('kelas.store') }}" method="post">
+        @csrf
+
+        <div class="form-group">
+            <label for="nama_kelas">Nama Kelas</label>
+            <input type="text" name="nama_kelas" id="nama_kelas" class="form-control @error('nama_kelas') is-invalid @enderror" value="{{ old('nama_kelas') }}" autofocus required>
+            @error('nama_kelas')
+                <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+        </div>
+
+        <div class="form-group">
+            <label for="kompetensi_keahlian">Kompetensi Keahlian</label>
+            <input type="text" name="kompetensi_keahlian" id="kompetensi_keahlian" class="form-control @error('kompetensi_keahlian') is-invalid @enderror" value="{{ old('kompetensi_keahlian') }}" required>
+            @error('kompetensi_keahlian')
+                <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+        </div>
+
+        <button type="submit" class="btn btn-primary">Simpan</button>
+    </form>
+@endsection
+
+
+
+
+'edit.blade.php'
+
+
+@extends('layouts.app')
+
+@section('content')
+    <h1>Edit Kelas</h1>
+
+    <form action="{{ route('kelas.update', $kelas->id_kelas) }}" method="post">
+        @csrf
+        @method('PUT')
+
+        <div class="form-group">
+            <label for="nama_kelas">Nama Kelas</label>
+            <input type="text" name="nama_kelas" id="nama_kelas" class="form-control @error('nama_kelas') is-invalid @enderror" value="{{ old('nama_kelas', $kelas->nama_kelas) }}" autofocus required>
+            @error('nama_kelas')
+                <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+        </div>
+
+        <div class="form-group">
+            <label for="kompetensi_keahlian">Kompetensi Keahlian</label>
+            <input type="text" name="kompetensi_keahlian" id="kompetensi_keahlian" class="form-control @error('kompetensi_keahlian') is-invalid @enderror" value="{{ old('kompetensi_keahlian', $kelas->kompetensi_keahlian) }}" required>
+            @error('kompetensi_keahlian')
+                <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+        </div>
+
+        <button type="submit" class="btn btn-primary">Simpan</button>
+    </form>
+@endsection
+
+
+
+
+'show.blade.php'
+
+
+
+@extends('layouts.app')
+
+@section('content')
+<div class="container">
+    <h1>Detail Kelas</h1>
+    <div class="card">
+        <div class="card-header">
+            {{ $kelas->nama_kelas }}
+        </div>
+        <div class="card-body">
+            <p><strong>ID Kelas:</strong> {{ $kelas->id_kelas }}</p>
+            <p><strong>Kompetensi Keahlian:</strong> {{ $kelas->kompetensi_keahlian }}</p>
+        </div>
+        <div class="card-footer">
+            <a href="{{ route('kelas.edit', $kelas) }}" class="btn btn-primary">Edit</a>
+            <form action="{{ route('kelas.destroy', $kelas) }}" method="POST" class="d-inline">
+                @csrf
+                @method('DELETE')
+                <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus kelas ini?')">Hapus</button>
+            </form>
+        </div>
+    </div>
+</div>
+@endsection
