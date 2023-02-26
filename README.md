@@ -1,5 +1,5 @@
 ---
-title: Jalan Ukk
+title: crud sederhana
 publishDate: 2023-02-18 21:00:00
 img: /assets/stock-2.jpg
 img_alt: UKK
